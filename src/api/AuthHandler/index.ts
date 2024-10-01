@@ -2,7 +2,24 @@ import qs from 'qs';
 import axios from 'axios';
 import CookieHandler from '../CookieHandler';
 import jwtDecode from 'jwt-decode';
-import { IDecodedAccessToken } from '../../hooks/api/auth/auth.interfaces';
+
+interface IDecodedAccessToken {
+  nbf: number;
+  exp: number;
+  iss: string;
+  aud: string[];
+  client_id: string;
+  sub: string;
+  auth_time: number;
+  idp: string;
+  userid: string;
+  username: string;
+  name: string;
+  email: string;
+  role: string[] | string;
+  scope: string[];
+  amr: string[];
+}
 
 // TODO: These should probably be env variables or secrets
 const SCOPE =
@@ -38,6 +55,7 @@ export default class AuthHandler implements IAuthHandler {
   initialAuth() {
     if (typeof window !== 'undefined') {
       if (!this.isTokenExpired()) {
+        //@ts-ignore
         this.setToken(this.cookieHandler.get());
       }
     }

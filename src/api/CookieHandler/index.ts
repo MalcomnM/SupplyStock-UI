@@ -8,9 +8,9 @@ interface ICookieHandler {
 }
 
 export default class CookieHandler implements ICookieHandler {
-  value: string;
+  value: string | undefined;
   name: string;
-  path: string;
+  path: string | undefined;
   expires: string;
 
   constructor(name: string, expires?: string | undefined) {
@@ -34,6 +34,7 @@ export default class CookieHandler implements ICookieHandler {
     }; path=/;`;
   }
 
+  //@ts-ignore
   get(): string | undefined {
     const cookie = document.cookie
       .split('; ')
