@@ -12,9 +12,6 @@ import { withTranslation } from "react-i18next";
 
 const Dashboard = props => {
 
-  //meta title
-  document.title = "Dashboard | StarterKit - Vite React Admin & Dashboard Template";
-
   return (
     <React.Fragment>
       <div className="page-content">
