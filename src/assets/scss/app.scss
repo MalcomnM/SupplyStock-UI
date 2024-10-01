@@ -93,13 +93,13 @@ File: Main Css File
 
 /* For light mode */
 :root[data-mantine-color-scheme="light"] body {
-    --mantine-color-body: #f3f4f7;
+    --mantine-color-body: #F5F5F5;
     --bs-footer-bg: #ffffff;
   }
   
   /* For dark mode */
   :root[data-mantine-color-scheme="dark"] body {
-    --mantine-color-body: #f3f4f7;
+    --mantine-color-body: #F5F5F5;
   }
   .vertical-menu {
     border-right: solid #e5eaf2 1px;
