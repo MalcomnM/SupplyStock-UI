@@ -175,9 +175,10 @@
 .mm-active {
   color: $sidebar-menu-item-active-color !important;
 
+
   >a {
     color: $sidebar-menu-item-active-color !important;
-
+    background-color: $sidebar-menu-item-active-color-bg !important;
     i {
       color: $sidebar-menu-item-active-color !important;
     }
