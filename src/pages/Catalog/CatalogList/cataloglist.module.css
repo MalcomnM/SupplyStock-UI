@@ -1,0 +1,15 @@
+:global(div.ag-theme-quartz),
+:global(div.ag-theme-quartz-dark) {
+  /* --ag-row-height: 65px !important; */
+  --ag-header-height: 58px;
+  --ag-header-background-color: transparent;
+  --ag-odd-row-background-color: rgb(245, 245, 245);
+  --ag-border-color: rgba(140, 140, 140, 0.147);
+  --ag-row-border-color: var(--ag-border-color);
+}
+
+:global(.ag-theme-quartz .ag-header) {
+  background-color: #e4e4e4;
+  color: #39485d;
+  border: 1px solid #eff0f1;
+}

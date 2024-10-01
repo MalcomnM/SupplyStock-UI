@@ -14,6 +14,13 @@ import { createTheme, MantineProvider } from "@mantine/core";
 import { ModalsProvider } from "@mantine/modals";
 import { Notifications } from "@mantine/notifications";
 import { QueryClientProvider, QueryClient} from "@tanstack/react-query";
+import "ag-grid-enterprise";
+import { LicenseManager } from "ag-grid-enterprise";
+
+import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the Data Grid
+import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the Data Grid
+
+LicenseManager.setLicenseKey('MDFbdjNdW1RSSUFMXQ==_MjM0NjcyNjg2NDQxNQ==cdad01e18ab54b1c566cacf17494de24');
 
 const theme = createTheme({});
 

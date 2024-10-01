@@ -10,7 +10,7 @@ import Breadcrumbs from "../../components/Common/Breadcrumb";
 //i18n
 import { withTranslation } from "react-i18next";
 import { IconPhoto } from "@tabler/icons-react";
-import { Button } from "@mantine/core";
+import CatalogList from "../Catalog/CatalogList/index"
 
 const Dashboard = props => {
 
@@ -26,7 +26,7 @@ const Dashboard = props => {
             breadcrumbItem={props.t("Dashboard")}
           />
 
-<Button variant="filled">Button</Button>
+<CatalogList/>
 
         </Container>
       </div>
