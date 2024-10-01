@@ -16,7 +16,7 @@ const useUser = (): {
 
   useEffect(() => {
     if (!isUserAuthenticated) {
-      navigate('/auth/login');
+      navigate('/login');
     }
   }, [isUserAuthenticated, navigate]);
 
@@ -26,7 +26,7 @@ const useUser = (): {
     const authenticated = !authApi.authHandler.isTokenExpired();
     if (!authenticated) {
       authApi.authHandler.deleteCookie();
-      navigate('/auth/login');
+      navigate('/login');
     }
   }, 10 * 60 * 1000); // 10 minutes in milliseconds
 

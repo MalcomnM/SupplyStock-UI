@@ -1,12 +1,9 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import useUser from "../hooks/useUser";
 
 const Authmiddleware = (props: any) => {
-  if (!localStorage.getItem("authUser")) {
-    return (
-      <Navigate to={{ pathname: "/login", state: { from: props.location } }} />
-    );
-  }
+  useUser();
+
   return <React.Fragment>{props.children}</React.Fragment>;
 };
 

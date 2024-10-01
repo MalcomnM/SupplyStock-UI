@@ -29,7 +29,7 @@ import lightlogo from "../../assets/images/logo-light.svg";
 import { IconInfoCircle } from "@tabler/icons-react";
 import { Alert, Button, Group, TextInput } from "@mantine/core";
 
-const Login = (props: any) => {
+const Login = () => {
   //meta title
   document.title = "Login | SureCheck";
 
