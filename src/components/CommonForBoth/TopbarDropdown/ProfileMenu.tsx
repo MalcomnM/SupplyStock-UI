@@ -48,9 +48,6 @@ const ProfileMenu = () => {
           id="page-header-user-dropdown"
           tag="button"
         >
-          <span className="rounded-circle header-profile-user p-3 bg-info">
-          {user?.name.charAt(0)}
-          </span>
           <span className="d-none d-xl-inline-block ms-2 me-1">{user?.name}</span>
           <i className="mdi mdi-chevron-down d-none d-xl-inline-block" />
         </DropdownToggle>
