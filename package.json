@@ -25,6 +25,7 @@
     "classnames": "^2.3.2",
     "dayjs": "^1.11.13",
     "eslint": "^8.46.0",
+    "feather-icons-react": "^0.7.0",
     "firebase": "^10.1.0",
     "formik": "^2.4.3",
     "i18next": "^23.4.1",

@@ -89,7 +89,10 @@ File: Main Css File
 
 
 // ------------
-
+// Pointer
+.pointer {
+  cursor: pointer;
+}
 
 /* For light mode */
 :root[data-mantine-color-scheme="light"] body {
