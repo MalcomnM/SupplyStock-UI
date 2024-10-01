@@ -26,17 +26,7 @@ const Dashboard = props => {
             breadcrumbItem={props.t("Dashboard")}
           />
 
-
-<Button
-        justify="center"
-        fullWidth
-        rightSection={icon}
-        leftSection={<span />}
-        variant="default"
-        mt="md"
-      >
-        Button label
-      </Button>
+<Button variant="filled">Button</Button>
 
         </Container>
       </div>
