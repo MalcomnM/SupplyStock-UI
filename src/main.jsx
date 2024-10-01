@@ -1,21 +1,30 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import App from "./App"
-import * as serviceWorker from "./serviceWorker"
-import { BrowserRouter } from "react-router-dom"
-import "./i18n"
-import { Provider } from "react-redux"
-import store  from "./store";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter } from "react-router-dom";
+import "./i18n";
+import { Provider } from "react-redux";
+import store from "./store";
 
+// core styles are required for all packages
+import '@mantine/core/styles.css';
+import { createTheme, MantineProvider } from "@mantine/core";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const theme = createTheme({
+ 
+});
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.Fragment>
-    <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>
+    <MantineProvider theme={theme}>
+      <Provider store={store}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </MantineProvider>
   </React.Fragment>
 );
 
-serviceWorker.unregister()
+serviceWorker.unregister();

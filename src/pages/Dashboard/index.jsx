@@ -9,8 +9,12 @@ import Breadcrumbs from "../../components/Common/Breadcrumb";
 
 //i18n
 import { withTranslation } from "react-i18next";
+import { IconPhoto } from "@tabler/icons-react";
+import { Button } from "@mantine/core";
 
 const Dashboard = props => {
+
+  const icon = <IconPhoto size={14} />;
 
   return (
     <React.Fragment>
@@ -21,6 +25,19 @@ const Dashboard = props => {
             title={props.t("Dashboards")}
             breadcrumbItem={props.t("Dashboard")}
           />
+
+
+<Button
+        justify="center"
+        fullWidth
+        rightSection={icon}
+        leftSection={<span />}
+        variant="default"
+        mt="md"
+      >
+        Button label
+      </Button>
+
         </Container>
       </div>
 

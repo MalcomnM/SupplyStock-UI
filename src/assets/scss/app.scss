@@ -86,3 +86,23 @@ File: Main Css File
 @import "custom/pages/timeline";
 @import "custom/pages/extras-pages";
 @import "custom/pages/jobs";
+
+
+// ------------
+
+
+/* For light mode */
+:root[data-mantine-color-scheme="light"] body {
+    --mantine-color-body: #f3f4f7;
+    --bs-footer-bg: #ffffff;
+  }
+  
+  /* For dark mode */
+  :root[data-mantine-color-scheme="dark"] body {
+    --mantine-color-body: #f3f4f7;
+  }
+  .vertical-menu {
+    border-right: solid #e5eaf2 1px;
+  }
+  
+  
