@@ -144,31 +144,11 @@ const SidebarContent = (props) => {
       <SimpleBar className="h-100" ref={ref}>
         <div id="sidebar-menu">
           <ul className="metismenu list-unstyled" id="side-menu">
-            <li className="menu-title">{props.t("Menu")} </li>
             <li>
-              <Link to="/#" className="has-arrow">
-                <i className="bx bx-home-circle"></i>
-                <span>{props.t("Dashboards")}</span>
+              <Link to="#" className=" ">
+              <i className="bx bx-home-circle"></i>
+                <span>{props.t("Dashboard")}</span>
               </Link>
-              <ul className="sub-menu" aria-expanded="false">
-                <li>
-                  <Link to="/dashboard">{props.t("Default")}</Link>
-                </li>
-                <li>
-                  <Link to="#">{props.t("Saas")}</Link>
-                </li>
-                <li>
-                  <Link to="#">{props.t("Crypto")}</Link>
-                </li>
-                <li>
-                  <Link to="#">{props.t("Blog")}</Link>
-                </li>
-                <li>
-                  <Link to="#">
-                    {props.t("Job")}
-                  </Link>
-                </li>
-              </ul>
             </li>
 
             <li className="menu-title">{props.t("Apps")}</li>
