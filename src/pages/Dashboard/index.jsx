@@ -26,7 +26,7 @@ const Dashboard = props => {
             breadcrumbItem={props.t("Dashboard")}
           />
 
-<CatalogList/>
+{/* <CatalogList/> */}
 
         </Container>
       </div>
